@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+
+# Databases
+sqlalchemy
+psycopg2
+
+python-dotenv
