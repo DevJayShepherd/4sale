@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from backend.core.config import settings
 from backend.db.session import engine
-from backend.db.base_class import Base
+from backend.db.base import Base
 
 
 def create_tables():
