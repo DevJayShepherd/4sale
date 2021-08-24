@@ -14,5 +14,5 @@ def test_create_user(client):
         "public_email": "string",
         "picture": "string"
     }
-    response = client.post("/users/", json.dumps(data))
+    response = client.post("/user", json.dumps(data))
     assert response.status_code == 200
