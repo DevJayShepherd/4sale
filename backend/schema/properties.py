@@ -1,6 +1,5 @@
 from typing import Optional
 from pydantic import BaseModel
-from datetime import date, datetime
 
 
 class PropertyCreate(BaseModel):

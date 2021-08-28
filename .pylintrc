@@ -1,0 +1,35 @@
+[MASTER]
+extension-pkg-whitelist=pydantic
+ignore=tests, base.py
+
+[MESSAGES CONTROL]
+disable =
+    missing-docstring,
+    too-few-public-methods, # problems with pydantic models
+    import-outside-toplevel, # sqlalchemy relationships
+    format, # flake
+    no-else-return,
+    no-else-raise,
+    redefined-builtin,
+    duplicate-code # https://github.com/PyCQA/pylint/issues/3619 (multiline function signatures treated as duplicates)
+
+[BASIC]
+good-names = db, es, id, f, v, h, i, j, k, df, r, w, x, y, orderItems, awbNo, courierCode, courierName, additionalInfo, orderStatus
+class-const-rgx=(([a-z_][a-z0-9_]{2,30})|([A-Z_][A-Z0-9_]{2,30})|(__.*__))$
+
+[TYPECHECK]
+ignored-classes=scoped_session
+generated-members=client.order,\w+.__table__,writer.book
+
+[DESIGN]
+max-args=10
+max-attributes=10
+max-branches=20
+max-locals=35
+max-statements=100
+
+[STRING]
+check-quote-consistency=yes
+
+#[SIMILARITIES]
+#ignore-imports=yes

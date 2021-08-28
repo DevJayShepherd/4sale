@@ -1,22 +1,23 @@
 import sys
 import os
-import pytest
 
 
 from typing import Any
 from typing import Generator
+import pytest
+
 
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# this is to include backend dir in sys.path so that we can import from db,main.py
-
 from backend.db.base import Base
 from backend.db.session import get_db
 from backend.apis.base import api_router
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# this is to include backend dir in sys.path so that we can import from db,main.py
 
 
 def start_application():
