@@ -1,7 +1,6 @@
 from fastapi import APIRouter
 
-from backend.apis.v1 import route_users
-from backend.apis.v1 import route_property
+from backend.apis.v1 import route_users, route_property
 
 
 api_router = APIRouter()

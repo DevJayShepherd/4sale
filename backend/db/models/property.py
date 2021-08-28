@@ -19,6 +19,3 @@ class Property(Base):
     date_posted = Column(Date, nullable=False, default=datetime.datetime.now)
     owner_id = Column(Integer, ForeignKey("user.id"))
     owner = relationship("User", back_populates="property")
-
-
-

@@ -17,7 +17,7 @@ def retrieve_properties(db: Session):
     return properties
 
 
-def update_property_by_id(property_id: int, the_property: PropertyCreate, db: Session, owner_id: int):
+def update_property_by_id(property_id: int, the_property: PropertyCreate, db: Session):
     existing_property = db.query(Property).filter(Property.id == property_id)
 
     if not existing_property:
@@ -27,7 +27,3 @@ def update_property_by_id(property_id: int, the_property: PropertyCreate, db: Se
     existing_property.update(the_property.__dict__)
     db.commit()
     return True
-
-
-
-
