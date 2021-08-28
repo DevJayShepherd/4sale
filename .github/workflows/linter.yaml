@@ -30,4 +30,4 @@ jobs:
           pip install -r requirements.txt
       - name: Lint with pylint
         run: |
-          pylint -j`nproc` app
+          pylint -j`nproc` backend
