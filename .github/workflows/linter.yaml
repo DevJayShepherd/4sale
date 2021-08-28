@@ -27,7 +27,7 @@ jobs:
           key: mypy-cache
       - name: Install dependencies
         run: |
-          pip install -r app/requirements.txt
+          pip install -r requirements.txt
       - name: Lint with pylint
         run: |
           pylint -j`nproc` app
