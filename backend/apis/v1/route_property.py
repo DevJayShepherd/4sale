@@ -24,7 +24,7 @@ def retrieve_all_properties(db: Session = Depends(get_db)):
     return properties
 
 
-@router.put("edit_property/{id}", response_model=DetailResponse)
+@router.put("/edit_property/{id}", response_model=DetailResponse)
 def edit_the_property(id: int, the_property: PropertyCreate, db: Session = Depends(get_db)):
     response = update_property_by_id(property_id=id, the_property=the_property, db=db)
     if not response:
