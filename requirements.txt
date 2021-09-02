@@ -1,3 +1,4 @@
+aiofiles==0.7.0
 algorithm==1.2.0
 asgiref==3.4.1
 astroid==2.7.2
@@ -17,7 +18,9 @@ h11==0.12.0
 idna==3.2
 iniconfig==1.1.1
 isort==5.9.3
+Jinja2==3.0.1
 lazy-object-proxy==1.6.0
+MarkupSafe==2.0.1
 mccabe==0.6.1
 packaging==21.0
 passlib==1.7.4
