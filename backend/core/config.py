@@ -23,5 +23,10 @@ class Settings:
     SECRET_KEY: str = os.getenv("SECRET_KEY")
     ALGORITHM: str = os.getenv("ALGORITHM")
 
+    ACCESS_KEY: str = os.getenv("ACCESS_KEY")
+    SECRET_AWS_KEY: str = os.getenv("SECRET_AWS_KEY")
+    BUCKET_NAME: str = os.getenv("BUCKET_NAME")
+    S3_FILE_PATH: str = os.getenv("S3_FILE_PATH")
+
 
 settings = Settings()

@@ -1,0 +1,51 @@
+{% extends "4sale/header.html" %}
+<body>
+{% include "4sale/navbar.html" %}
+{% block content %}
+<div class="container px-4 px-lg-5">
+<div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{{ the_property.image_url }}" alt="..." /></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Check properties listings, it's Free!</h1>
+                    <p>{{ the_property.cta }}</p>
+                    <a class="btn btn-primary" href="#!">Call to Action!</a>
+                </div>
+</div>
+  <br>
+<h1>Property Details...</h1>
+  <br>
+<table class="table">
+  <tbody>
+    <tr>
+      <th scope="row">Property Name</th>
+      <td>{{ the_property.property_title }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Property Description</th>
+      <td>{{ the_property.property_description }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Property Status</th>
+      <td>{{ the_property.property_status }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Property Price</th>
+      <td>{{ the_property.property_price }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Property Bedrooms</th>
+      <td>{{ the_property.property_bedrooms }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Property Bathrooms</th>
+      <td>{{ the_property.property_bathrooms }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Property Garages</th>
+      <td>{{ the_property.property_garages }}</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</body>
+{% endblock %}

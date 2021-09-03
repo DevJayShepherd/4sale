@@ -22,6 +22,7 @@ class PropertyShow(BaseModel):
     property_garages: Optional[int] = 0
     property_bathrooms: int
     property_description: str
+    image_url: Optional[str] = None
 
     class Config:
         orm_mode = True
