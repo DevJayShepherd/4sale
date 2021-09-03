@@ -22,7 +22,7 @@ ignored-classes=scoped_session
 generated-members=client.order,\w+.__table__,writer.book
 
 [DESIGN]
-max-args=10
+max-args=11
 max-attributes=10
 max-branches=20
 max-locals=35
